@@ -27,7 +27,7 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
         <boolProp name="HTTPSampler.image_parser">true</boolProp>
         <stringProp name="HTTPSampler.domain">${host}</stringProp>
         <stringProp name="HTTPSampler.port">${port}</stringProp>
@@ -38,13 +38,13 @@
         <stringProp name="HTTPSampler.implementation"></stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager">
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
         <collectionProp name="CookieManager.cookies"/>
         <boolProp name="CookieManager.clearEachIteration">false</boolProp>
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager">
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
         <boolProp name="clearEachIteration">true</boolProp>
         <boolProp name="useExpires">true</boolProp>
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
@@ -64,7 +64,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Inicio">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Inicio" enabled="true">
           <stringProp name="HTTPSampler.domain">${host}</stringProp>
           <stringProp name="HTTPSampler.port">${port}</stringProp>
           <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -109,13 +109,13 @@
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <RandomOrderController guiclass="RandomOrderControllerGui" testclass="RandomOrderController" testname="Random Order Controller"/>
+        <RandomOrderController guiclass="RandomOrderControllerGui" testclass="RandomOrderController" testname="Random Order Controller" enabled="true"/>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Busca-pagina-consulta propietarios">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Busca-pagina-consulta propietarios" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar propietarios">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar propietarios" enabled="true">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -164,7 +164,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Enviar lastName">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Enviar lastName" enabled="true">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -221,11 +221,11 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+            <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
               <stringProp name="LoopController.loops">5</stringProp>
             </LoopController>
             <hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Páginar propietarios">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Páginar propietarios" enabled="true">
                 <stringProp name="HTTPSampler.domain">${host}</stringProp>
                 <stringProp name="HTTPSampler.port">${port}</stringProp>
                 <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -283,7 +283,7 @@
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Ver propietario">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Ver propietario" enabled="true">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -386,7 +386,7 @@
             <stringProp name="LoopController.loops">3</stringProp>
           </LoopController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Páginar veterinarios">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Páginar veterinarios" enabled="true">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -585,7 +585,7 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Formulario nueva mascota">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Formulario nueva mascota" enabled="true">
             <stringProp name="HTTPSampler.domain">${host}</stringProp>
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
