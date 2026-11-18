@@ -19,3 +19,9 @@ public class HeapTest {
         } 
     } 
 }
+
+/*
+ * java -Xms32m -Xmx64m HeapTest
+ * java -Xms128m -Xmx256m HeapTest
+ * java -Xms512m -Xmx1g HeapTest
+ */
