@@ -1,0 +1,42 @@
+while(array != null && ...) {
+...
+}
+
+if(array != null) 
+	while(...)
+
+
+while(array != null && ...) {
+	array.find(item -> item.id != 0);
+}
+
+Predicate<Persona> Flitro(int id) {
+  return  item -> item.id != id;
+}
+
+Predicate<Persona> filtro = item -> item.id != id;
+while(array != null && ...) {
+	array.find(Filtro);
+}
+
+
+String rellena(int longitud, string valor) {
+var rslt = "";
+for(...) {
+   rslt += valor;
+}
+return rslt;
+}
+
+var rslt = "";
+rslt += "....";
+rslt += "cccc";
+return rslt;
+
+"mmm" + s + "bbb"
+
+"""
+select *
+from t
+where id = %d
+""".formated(id)
