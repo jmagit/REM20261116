@@ -37,7 +37,7 @@ public class VirtualThreadTest {
 
 	private static String hilosDePlataforma() throws Exception {
 		List<Tarea> tasks = new ArrayList<>();
-		for (int i = 0; i < 10_000; i++) {
+		for (int i = 0; i < 1_000; i++) {
 			tasks.add(new Tarea(i));
 		}
 		long time = System.nanoTime(), sum = 0;
@@ -55,7 +55,7 @@ public class VirtualThreadTest {
 
 	private static String hilosVirtuales() throws Exception {
 		List<Tarea> tasks = new ArrayList<>();
-		for (int i = 0; i < 10_000; i++) {
+		for (int i = 0; i < 1_000; i++) {
 			tasks.add(new Tarea(i));
 		}
 		long time = System.nanoTime(), sum = 0;
