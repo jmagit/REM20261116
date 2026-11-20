@@ -20,9 +20,9 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 import org.openjdk.jmh.runner.options.TimeValue;
 
 @BenchmarkMode(Mode.AverageTime)
+@OutputTimeUnit(TimeUnit.NANOSECONDS)
 @Warmup(timeUnit = TimeUnit.SECONDS, time = 1, iterations = 2)
 @Measurement(timeUnit = TimeUnit.SECONDS, time = 1, iterations = 5)
-@OutputTimeUnit(TimeUnit.NANOSECONDS)
 @Fork(1)
 @State(Scope.Benchmark)
 public class ConcatStringBenchmark {
@@ -61,31 +61,31 @@ public class ConcatStringBenchmark {
             return result.toString();
         }
 
-//        public static String repeatWithStringRepeat(String seed, int count) {
-//            return seed.repeat(count);
-//        }
+        public static String repeatWithStringRepeat(String seed, int count) {
+            return seed.repeat(count);
+        }
 
     }
 
-//    @Param({ "10", "100", "1000" })
+    @Param({ "10", "100", "1000" })
     int size = 10;
 
-//    @Param({ ".", "1234567890" })
+    @Param({ ".", "1234567890" })
     String source = ".";
 
 	@Benchmark
 	public void baseline() {
 	}
 
-    @Benchmark
-    public String testRepeatWithPlus() {
-        return StringHelper.repeatWithPlus(source, size);
-    }
-
-    @Benchmark
-    public String testRepeatWithConcat() {
-        return StringHelper.repeatWithConcat(source, size);
-    }
+//    @Benchmark
+//    public String testRepeatWithPlus() {
+//        return StringHelper.repeatWithPlus(source, size);
+//    }
+//
+//    @Benchmark
+//    public String testRepeatWithConcat() {
+//        return StringHelper.repeatWithConcat(source, size);
+//    }
 
     @Benchmark
     public String testRepeatWithStringBuilder() {
@@ -97,10 +97,10 @@ public class ConcatStringBenchmark {
         return StringHelper.repeatWithStringBuffer(source, size);
     }
 
-//    @Benchmark
-//    public String testRepeatWithStringRepeat() {
-//        return StringHelper.repeatWithStringRepeat(source, size);
-//    }
+    @Benchmark
+    public String testRepeatWithStringRepeat() {
+        return StringHelper.repeatWithStringRepeat(source, size);
+    }
 
 	public static void main(String[] args) throws RunnerException {
 		Options opt = new OptionsBuilder()
