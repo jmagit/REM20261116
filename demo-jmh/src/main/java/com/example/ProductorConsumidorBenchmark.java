@@ -28,6 +28,10 @@ public class ProductorConsumidorBenchmark {
     	public BlockingQueue<Integer> cola = new LinkedBlockingQueue<>(100); // respaldada por nodos
     }
 
+	@Benchmark
+	public void baseline() {
+	}
+
     @Benchmark
     @Group("flujoCola")
     @GroupThreads(2) // 2 hilos llamarán a este método continuamente

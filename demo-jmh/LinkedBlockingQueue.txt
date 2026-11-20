@@ -1,0 +1,145 @@
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 9 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.example.ProductorConsumidorBenchmark.baseline
+
+# Run progress: 0,00% complete, ETA 00:00:32
+# Fork: 1 of 2
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 6074,914 ops/us
+# Warmup Iteration   2: 6203,954 ops/us
+# Warmup Iteration   3: 5854,650 ops/us
+Iteration   1: 6080,039 ops/us
+Iteration   2: 6107,672 ops/us
+Iteration   3: 6069,555 ops/us
+Iteration   4: 6005,998 ops/us
+Iteration   5: 6142,746 ops/us
+
+# Run progress: 25,00% complete, ETA 00:00:27
+# Fork: 2 of 2
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 6398,387 ops/us
+# Warmup Iteration   2: 5983,616 ops/us
+# Warmup Iteration   3: 6330,470 ops/us
+Iteration   1: 6207,904 ops/us
+Iteration   2: 6238,712 ops/us
+Iteration   3: 6143,983 ops/us
+Iteration   4: 6308,375 ops/us
+Iteration   5: 5956,687 ops/us
+
+
+Result "com.example.ProductorConsumidorBenchmark.baseline":
+  6126,167 ±(99.9%) 160,932 ops/us [Average]
+  (min, avg, max) = (5956,687, 6126,167, 6308,375), stdev = 106,447
+  CI (99.9%): [5965,235, 6287,099] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 9 threads (3 groups; 1x "consumir", 2x "producir" in each group), will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.example.ProductorConsumidorBenchmark.flujoCola
+
+# Run progress: 50,00% complete, ETA 00:00:17
+# Fork: 1 of 2
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 14,714 ops/us
+# Warmup Iteration   2: 14,675 ops/us
+# Warmup Iteration   3: 15,062 ops/us
+Iteration   1: 15,136 ops/us
+                 consumir: 7,580 ops/us
+                 producir: 7,557 ops/us
+
+Iteration   2: 16,627 ops/us
+                 consumir: 8,333 ops/us
+                 producir: 8,293 ops/us
+
+Iteration   3: 16,805 ops/us
+                 consumir: 8,418 ops/us
+                 producir: 8,387 ops/us
+
+Iteration   4: 16,407 ops/us
+                 consumir: 8,218 ops/us
+                 producir: 8,189 ops/us
+
+Iteration   5: 16,159 ops/us
+                 consumir: 8,094 ops/us
+                 producir: 8,065 ops/us
+
+
+# Run progress: 75,00% complete, ETA 00:00:08
+# Fork: 2 of 2
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 13,834 ops/us
+# Warmup Iteration   2: 15,080 ops/us
+# Warmup Iteration   3: 15,666 ops/us
+Iteration   1: 15,984 ops/us
+                 consumir: 8,005 ops/us
+                 producir: 7,979 ops/us
+
+Iteration   2: 15,071 ops/us
+                 consumir: 7,517 ops/us
+                 producir: 7,554 ops/us
+
+Iteration   3: 14,133 ops/us
+                 consumir: 7,009 ops/us
+                 producir: 7,124 ops/us
+
+Iteration   4: 14,560 ops/us
+                 consumir: 7,286 ops/us
+                 producir: 7,274 ops/us
+
+Iteration   5: 16,167 ops/us
+                 consumir: 8,069 ops/us
+                 producir: 8,098 ops/us
+
+
+
+Result "com.example.ProductorConsumidorBenchmark.flujoCola":
+  15,705 ±(99.9%) 1,385 ops/us [Average]
+  (min, avg, max) = (14,133, 15,705, 16,805), stdev = 0,916
+  CI (99.9%): [14,320, 17,090] (assumes normal distribution)
+
+Secondary result "com.example.ProductorConsumidorBenchmark.flujoCola:consumir":
+  7,853 ±(99.9%) 0,718 ops/us [Average]
+  (min, avg, max) = (7,009, 7,853, 8,418), stdev = 0,475
+  CI (99.9%): [7,135, 8,571] (assumes normal distribution)
+
+Secondary result "com.example.ProductorConsumidorBenchmark.flujoCola:producir":
+  7,852 ±(99.9%) 0,668 ops/us [Average]
+  (min, avg, max) = (7,124, 7,852, 8,387), stdev = 0,442
+  CI (99.9%): [7,184, 8,520] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:35
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                         Mode  Cnt     Score     Error   Units
+ProductorConsumidorBenchmark.baseline            thrpt   10  6126,167 ± 160,932  ops/us
+ProductorConsumidorBenchmark.flujoCola           thrpt   10    15,705 ±   1,385  ops/us
+ProductorConsumidorBenchmark.flujoCola:consumir  thrpt   10     7,853 ±   0,718  ops/us
+ProductorConsumidorBenchmark.flujoCola:producir  thrpt   10     7,852 ±   0,668  ops/us
