@@ -1,0 +1,785 @@
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.baseline
+# Parameters: (size = 10, source = .)
+
+# Run progress: 0,00% complete, ETA 00:02:48
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 0,518 ns/op
+# Warmup Iteration   2: 0,521 ns/op
+Iteration   1: 0,585 ns/op
+Iteration   2: 0,580 ns/op
+Iteration   3: 0,806 ns/op
+Iteration   4: 1,181 ns/op
+Iteration   5: 0,686 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.baseline":
+  0,767 ±(99.9%) 0,958 ns/op [Average]
+  (min, avg, max) = (0,580, 0,767, 1,181), stdev = 0,249
+  CI (99.9%): [≈ 0, 1,725] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.baseline
+# Parameters: (size = 10, source = 1234567890)
+
+# Run progress: 4,17% complete, ETA 00:02:53
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 0,541 ns/op
+# Warmup Iteration   2: 0,550 ns/op
+Iteration   1: 0,595 ns/op
+Iteration   2: 0,642 ns/op
+Iteration   3: 0,767 ns/op
+Iteration   4: 0,707 ns/op
+Iteration   5: 0,783 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.baseline":
+  0,699 ±(99.9%) 0,309 ns/op [Average]
+  (min, avg, max) = (0,595, 0,699, 0,783), stdev = 0,080
+  CI (99.9%): [0,390, 1,008] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.baseline
+# Parameters: (size = 100, source = .)
+
+# Run progress: 8,33% complete, ETA 00:02:45
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 0,576 ns/op
+# Warmup Iteration   2: 0,640 ns/op
+Iteration   1: 0,691 ns/op
+Iteration   2: 0,699 ns/op
+Iteration   3: 0,593 ns/op
+Iteration   4: 0,524 ns/op
+Iteration   5: 0,511 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.baseline":
+  0,604 ±(99.9%) 0,343 ns/op [Average]
+  (min, avg, max) = (0,511, 0,604, 0,699), stdev = 0,089
+  CI (99.9%): [0,260, 0,947] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.baseline
+# Parameters: (size = 100, source = 1234567890)
+
+# Run progress: 12,50% complete, ETA 00:02:38
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 0,510 ns/op
+# Warmup Iteration   2: 0,505 ns/op
+Iteration   1: 0,495 ns/op
+Iteration   2: 0,504 ns/op
+Iteration   3: 0,507 ns/op
+Iteration   4: 0,538 ns/op
+Iteration   5: 0,560 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.baseline":
+  0,521 ±(99.9%) 0,105 ns/op [Average]
+  (min, avg, max) = (0,495, 0,521, 0,560), stdev = 0,027
+  CI (99.9%): [0,416, 0,626] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.baseline
+# Parameters: (size = 1000, source = .)
+
+# Run progress: 16,67% complete, ETA 00:02:30
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 0,497 ns/op
+# Warmup Iteration   2: 0,481 ns/op
+Iteration   1: 0,498 ns/op
+Iteration   2: 0,501 ns/op
+Iteration   3: 0,545 ns/op
+Iteration   4: 0,585 ns/op
+Iteration   5: 0,572 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.baseline":
+  0,540 ±(99.9%) 0,152 ns/op [Average]
+  (min, avg, max) = (0,498, 0,540, 0,585), stdev = 0,040
+  CI (99.9%): [0,388, 0,693] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.baseline
+# Parameters: (size = 1000, source = 1234567890)
+
+# Run progress: 20,83% complete, ETA 00:02:22
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 0,491 ns/op
+# Warmup Iteration   2: 0,483 ns/op
+Iteration   1: 0,502 ns/op
+Iteration   2: 0,517 ns/op
+Iteration   3: 0,560 ns/op
+Iteration   4: 0,504 ns/op
+Iteration   5: 0,524 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.baseline":
+  0,522 ±(99.9%) 0,091 ns/op [Average]
+  (min, avg, max) = (0,502, 0,522, 0,560), stdev = 0,024
+  CI (99.9%): [0,431, 0,613] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringBuffer
+# Parameters: (size = 10, source = .)
+
+# Run progress: 25,00% complete, ETA 00:02:15
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 153,348 ns/op
+# Warmup Iteration   2: 136,913 ns/op
+Iteration   1: 134,099 ns/op
+Iteration   2: 143,439 ns/op
+Iteration   3: 143,991 ns/op
+Iteration   4: 154,055 ns/op
+Iteration   5: 147,067 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringBuffer":
+  144,530 ±(99.9%) 27,730 ns/op [Average]
+  (min, avg, max) = (134,099, 144,530, 154,055), stdev = 7,201
+  CI (99.9%): [116,800, 172,260] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringBuffer
+# Parameters: (size = 10, source = 1234567890)
+
+# Run progress: 29,17% complete, ETA 00:02:07
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 261,053 ns/op
+# Warmup Iteration   2: 230,107 ns/op
+Iteration   1: 215,768 ns/op
+Iteration   2: 200,103 ns/op
+Iteration   3: 197,125 ns/op
+Iteration   4: 198,783 ns/op
+Iteration   5: 200,653 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringBuffer":
+  202,486 ±(99.9%) 29,066 ns/op [Average]
+  (min, avg, max) = (197,125, 202,486, 215,768), stdev = 7,548
+  CI (99.9%): [173,420, 231,553] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringBuffer
+# Parameters: (size = 100, source = .)
+
+# Run progress: 33,33% complete, ETA 00:02:00
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 1125,033 ns/op
+# Warmup Iteration   2: 1058,190 ns/op
+Iteration   1: 1279,786 ns/op
+Iteration   2: 1304,730 ns/op
+Iteration   3: 1983,802 ns/op
+Iteration   4: 2473,471 ns/op
+Iteration   5: 1532,291 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringBuffer":
+  1714,816 ±(99.9%) 1962,174 ns/op [Average]
+  (min, avg, max) = (1279,786, 1714,816, 2473,471), stdev = 509,570
+  CI (99.9%): [≈ 0, 3676,990] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringBuffer
+# Parameters: (size = 100, source = 1234567890)
+
+# Run progress: 37,50% complete, ETA 00:01:52
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 1778,936 ns/op
+# Warmup Iteration   2: 1569,198 ns/op
+Iteration   1: 1695,927 ns/op
+Iteration   2: 1849,526 ns/op
+Iteration   3: 2028,804 ns/op
+Iteration   4: 1830,633 ns/op
+Iteration   5: 1687,246 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringBuffer":
+  1818,427 ±(99.9%) 536,297 ns/op [Average]
+  (min, avg, max) = (1687,246, 1818,427, 2028,804), stdev = 139,275
+  CI (99.9%): [1282,131, 2354,724] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringBuffer
+# Parameters: (size = 1000, source = .)
+
+# Run progress: 41,67% complete, ETA 00:01:45
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 10282,007 ns/op
+# Warmup Iteration   2: 10533,258 ns/op
+Iteration   1: 12282,281 ns/op
+Iteration   2: 12135,770 ns/op
+Iteration   3: 12071,821 ns/op
+Iteration   4: 11982,446 ns/op
+Iteration   5: 11934,218 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringBuffer":
+  12081,307 ±(99.9%) 526,763 ns/op [Average]
+  (min, avg, max) = (11934,218, 12081,307, 12282,281), stdev = 136,799
+  CI (99.9%): [11554,544, 12608,070] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringBuffer
+# Parameters: (size = 1000, source = 1234567890)
+
+# Run progress: 45,83% complete, ETA 00:01:37
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 18005,585 ns/op
+# Warmup Iteration   2: 17296,322 ns/op
+Iteration   1: 14721,180 ns/op
+Iteration   2: 18558,379 ns/op
+Iteration   3: 17670,636 ns/op
+Iteration   4: 17890,818 ns/op
+Iteration   5: 17467,729 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringBuffer":
+  17261,748 ±(99.9%) 5692,278 ns/op [Average]
+  (min, avg, max) = (14721,180, 17261,748, 18558,379), stdev = 1478,266
+  CI (99.9%): [11569,471, 22954,026] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringBuilder
+# Parameters: (size = 10, source = .)
+
+# Run progress: 50,00% complete, ETA 00:01:30
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 141,216 ns/op
+# Warmup Iteration   2: 124,363 ns/op
+Iteration   1: 123,702 ns/op
+Iteration   2: 123,758 ns/op
+Iteration   3: 132,897 ns/op
+Iteration   4: 141,811 ns/op
+Iteration   5: 148,366 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringBuilder":
+  134,107 ±(99.9%) 42,161 ns/op [Average]
+  (min, avg, max) = (123,702, 134,107, 148,366), stdev = 10,949
+  CI (99.9%): [91,946, 176,267] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringBuilder
+# Parameters: (size = 10, source = 1234567890)
+
+# Run progress: 54,17% complete, ETA 00:01:22
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 253,020 ns/op
+# Warmup Iteration   2: 257,704 ns/op
+Iteration   1: 188,773 ns/op
+Iteration   2: 196,952 ns/op
+Iteration   3: 231,035 ns/op
+Iteration   4: 200,775 ns/op
+Iteration   5: 194,399 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringBuilder":
+  202,387 ±(99.9%) 63,914 ns/op [Average]
+  (min, avg, max) = (188,773, 202,387, 231,035), stdev = 16,598
+  CI (99.9%): [138,473, 266,301] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringBuilder
+# Parameters: (size = 100, source = .)
+
+# Run progress: 58,33% complete, ETA 00:01:15
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 1213,641 ns/op
+# Warmup Iteration   2: 1200,142 ns/op
+Iteration   1: 1127,030 ns/op
+Iteration   2: 1159,001 ns/op
+Iteration   3: 1126,089 ns/op
+Iteration   4: 1129,093 ns/op
+Iteration   5: 1148,713 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringBuilder":
+  1137,985 ±(99.9%) 57,674 ns/op [Average]
+  (min, avg, max) = (1126,089, 1137,985, 1159,001), stdev = 14,978
+  CI (99.9%): [1080,311, 1195,659] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringBuilder
+# Parameters: (size = 100, source = 1234567890)
+
+# Run progress: 62,50% complete, ETA 00:01:07
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 1603,670 ns/op
+# Warmup Iteration   2: 1643,625 ns/op
+Iteration   1: 1446,724 ns/op
+Iteration   2: 1394,294 ns/op
+Iteration   3: 1516,485 ns/op
+Iteration   4: 1466,889 ns/op
+Iteration   5: 1422,218 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringBuilder":
+  1449,322 ±(99.9%) 178,433 ns/op [Average]
+  (min, avg, max) = (1394,294, 1449,322, 1516,485), stdev = 46,338
+  CI (99.9%): [1270,889, 1627,755] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringBuilder
+# Parameters: (size = 1000, source = .)
+
+# Run progress: 66,67% complete, ETA 00:01:00
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 9431,296 ns/op
+# Warmup Iteration   2: 9573,632 ns/op
+Iteration   1: 10296,488 ns/op
+Iteration   2: 10555,217 ns/op
+Iteration   3: 15523,412 ns/op
+Iteration   4: 15603,939 ns/op
+Iteration   5: 10492,011 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringBuilder":
+  12494,213 ±(99.9%) 10796,397 ns/op [Average]
+  (min, avg, max) = (10296,488, 12494,213, 15603,939), stdev = 2803,790
+  CI (99.9%): [1697,816, 23290,610] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringBuilder
+# Parameters: (size = 1000, source = 1234567890)
+
+# Run progress: 70,83% complete, ETA 00:00:52
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 22381,251 ns/op
+# Warmup Iteration   2: 14749,396 ns/op
+Iteration   1: 14588,173 ns/op
+Iteration   2: 15620,527 ns/op
+Iteration   3: 18583,026 ns/op
+Iteration   4: 16121,542 ns/op
+Iteration   5: 15810,292 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringBuilder":
+  16144,712 ±(99.9%) 5696,914 ns/op [Average]
+  (min, avg, max) = (14588,173, 16144,712, 18583,026), stdev = 1479,470
+  CI (99.9%): [10447,798, 21841,626] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringRepeat
+# Parameters: (size = 10, source = .)
+
+# Run progress: 75,00% complete, ETA 00:00:45
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 22,177 ns/op
+# Warmup Iteration   2: 17,137 ns/op
+Iteration   1: 17,226 ns/op
+Iteration   2: 20,082 ns/op
+Iteration   3: 17,722 ns/op
+Iteration   4: 17,755 ns/op
+Iteration   5: 17,652 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringRepeat":
+  18,087 ±(99.9%) 4,371 ns/op [Average]
+  (min, avg, max) = (17,226, 18,087, 20,082), stdev = 1,135
+  CI (99.9%): [13,716, 22,458] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringRepeat
+# Parameters: (size = 10, source = 1234567890)
+
+# Run progress: 79,17% complete, ETA 00:00:37
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 68,740 ns/op
+# Warmup Iteration   2: 62,639 ns/op
+Iteration   1: 59,254 ns/op
+Iteration   2: 58,054 ns/op
+Iteration   3: 55,733 ns/op
+Iteration   4: 58,465 ns/op
+Iteration   5: 64,881 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringRepeat":
+  59,277 ±(99.9%) 13,076 ns/op [Average]
+  (min, avg, max) = (55,733, 59,277, 64,881), stdev = 3,396
+  CI (99.9%): [46,201, 72,353] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringRepeat
+# Parameters: (size = 100, source = .)
+
+# Run progress: 83,33% complete, ETA 00:00:30
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 33,399 ns/op
+# Warmup Iteration   2: 28,720 ns/op
+Iteration   1: 23,581 ns/op
+Iteration   2: 22,710 ns/op
+Iteration   3: 25,134 ns/op
+Iteration   4: 23,697 ns/op
+Iteration   5: 22,023 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringRepeat":
+  23,429 ±(99.9%) 4,514 ns/op [Average]
+  (min, avg, max) = (22,023, 23,429, 25,134), stdev = 1,172
+  CI (99.9%): [18,915, 27,943] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringRepeat
+# Parameters: (size = 100, source = 1234567890)
+
+# Run progress: 87,50% complete, ETA 00:00:22
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 178,445 ns/op
+# Warmup Iteration   2: 147,777 ns/op
+Iteration   1: 143,756 ns/op
+Iteration   2: 143,460 ns/op
+Iteration   3: 199,511 ns/op
+Iteration   4: 187,733 ns/op
+Iteration   5: 172,817 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringRepeat":
+  169,455 ±(99.9%) 97,888 ns/op [Average]
+  (min, avg, max) = (143,460, 169,455, 199,511), stdev = 25,421
+  CI (99.9%): [71,568, 267,343] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringRepeat
+# Parameters: (size = 1000, source = .)
+
+# Run progress: 91,67% complete, ETA 00:00:15
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 206,483 ns/op
+# Warmup Iteration   2: 213,491 ns/op
+Iteration   1: 116,542 ns/op
+Iteration   2: 116,926 ns/op
+Iteration   3: 125,967 ns/op
+Iteration   4: 124,319 ns/op
+Iteration   5: 118,644 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringRepeat":
+  120,479 ±(99.9%) 16,824 ns/op [Average]
+  (min, avg, max) = (116,542, 120,479, 125,967), stdev = 4,369
+  CI (99.9%): [103,655, 137,304] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 27, Java HotSpot(TM) 64-Bit Server VM, 27+35-2325
+# VM invoker: C:\Program Files\Java\jdk-27\bin\java.exe
+# VM options: --sun-misc-unsafe-memory-access=allow
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.ConcatStringBenchmark.testRepeatWithStringRepeat
+# Parameters: (size = 1000, source = 1234567890)
+
+# Run progress: 95,83% complete, ETA 00:00:07
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: --sun-misc-unsafe-memory-access=allow
+# Warmup Iteration   1: 1629,075 ns/op
+# Warmup Iteration   2: 2105,428 ns/op
+Iteration   1: 1488,538 ns/op
+Iteration   2: 1528,845 ns/op
+Iteration   3: 1363,148 ns/op
+Iteration   4: 1307,367 ns/op
+Iteration   5: 1527,615 ns/op
+
+
+Result "com.example.ConcatStringBenchmark.testRepeatWithStringRepeat":
+  1443,102 ±(99.9%) 391,628 ns/op [Average]
+  (min, avg, max) = (1307,367, 1443,102, 1528,845), stdev = 101,705
+  CI (99.9%): [1051,474, 1834,730] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:03:00
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                          (size)    (source)  Mode  Cnt      Score       Error  Units
+ConcatStringBenchmark.baseline                         10           .  avgt    5      0,767 ±     0,958  ns/op
+ConcatStringBenchmark.baseline                         10  1234567890  avgt    5      0,699 ±     0,309  ns/op
+ConcatStringBenchmark.baseline                        100           .  avgt    5      0,604 ±     0,343  ns/op
+ConcatStringBenchmark.baseline                        100  1234567890  avgt    5      0,521 ±     0,105  ns/op
+ConcatStringBenchmark.baseline                       1000           .  avgt    5      0,540 ±     0,152  ns/op
+ConcatStringBenchmark.baseline                       1000  1234567890  avgt    5      0,522 ±     0,091  ns/op
+ConcatStringBenchmark.testRepeatWithStringBuffer       10           .  avgt    5    144,530 ±    27,730  ns/op
+ConcatStringBenchmark.testRepeatWithStringBuffer       10  1234567890  avgt    5    202,486 ±    29,066  ns/op
+ConcatStringBenchmark.testRepeatWithStringBuffer      100           .  avgt    5   1714,816 ±  1962,174  ns/op
+ConcatStringBenchmark.testRepeatWithStringBuffer      100  1234567890  avgt    5   1818,427 ±   536,297  ns/op
+ConcatStringBenchmark.testRepeatWithStringBuffer     1000           .  avgt    5  12081,307 ±   526,763  ns/op
+ConcatStringBenchmark.testRepeatWithStringBuffer     1000  1234567890  avgt    5  17261,748 ±  5692,278  ns/op
+ConcatStringBenchmark.testRepeatWithStringBuilder      10           .  avgt    5    134,107 ±    42,161  ns/op
+ConcatStringBenchmark.testRepeatWithStringBuilder      10  1234567890  avgt    5    202,387 ±    63,914  ns/op
+ConcatStringBenchmark.testRepeatWithStringBuilder     100           .  avgt    5   1137,985 ±    57,674  ns/op
+ConcatStringBenchmark.testRepeatWithStringBuilder     100  1234567890  avgt    5   1449,322 ±   178,433  ns/op
+ConcatStringBenchmark.testRepeatWithStringBuilder    1000           .  avgt    5  12494,213 ± 10796,397  ns/op
+ConcatStringBenchmark.testRepeatWithStringBuilder    1000  1234567890  avgt    5  16144,712 ±  5696,914  ns/op
+ConcatStringBenchmark.testRepeatWithStringRepeat       10           .  avgt    5     18,087 ±     4,371  ns/op
+ConcatStringBenchmark.testRepeatWithStringRepeat       10  1234567890  avgt    5     59,277 ±    13,076  ns/op
+ConcatStringBenchmark.testRepeatWithStringRepeat      100           .  avgt    5     23,429 ±     4,514  ns/op
+ConcatStringBenchmark.testRepeatWithStringRepeat      100  1234567890  avgt    5    169,455 ±    97,888  ns/op
+ConcatStringBenchmark.testRepeatWithStringRepeat     1000           .  avgt    5    120,479 ±    16,824  ns/op
+ConcatStringBenchmark.testRepeatWithStringRepeat     1000  1234567890  avgt    5   1443,102 ±   391,628  ns/op
+
+Benchmark result is saved to MyBenchmark.json
