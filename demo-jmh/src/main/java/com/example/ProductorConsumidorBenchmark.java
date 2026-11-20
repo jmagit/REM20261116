@@ -14,9 +14,9 @@ import java.util.concurrent.TimeUnit;
 @BenchmarkMode(Mode.Throughput) // Mide operaciones por segundo
 @OutputTimeUnit(TimeUnit.MICROSECONDS)
 @Warmup(iterations = 3, time = 1)
-@Measurement(iterations = 5, time = 1)
+@Measurement(iterations = 5, time = 1, timeUnit = TimeUnit.SECONDS)
 @Fork(2)
-//@Threads(3) // 2 productores y 1 consumidor
+@Threads(9) // 2 productores y 1 consumidor
 public class ProductorConsumidorBenchmark {
 
     @State(Scope.Group) // Compartido entre productores y consumidores del mismo grupo
@@ -24,8 +24,8 @@ public class ProductorConsumidorBenchmark {
     	// La interfaz BlockingQueue representa una cola segura para subprocesos. Bloquea un subproceso que intente 
     	// insertar elementos en la cola que está llena y bloquea al subproceso que intente extraer elementos de la cola 
     	// si está vacía. ArrayBlockingqueue es una cola con capacidad limitada.
-    	public BlockingQueue<Integer> cola = new ArrayBlockingQueue<>(100); // repaldada por un array
-//    	public BlockingQueue<Integer> cola = new LinkedBlockingQueue<>(100); // respaldada por nodos
+//    	public BlockingQueue<Integer> cola = new ArrayBlockingQueue<>(100); // repaldada por un array
+    	public BlockingQueue<Integer> cola = new LinkedBlockingQueue<>(100); // respaldada por nodos
     }
 
     @Benchmark
